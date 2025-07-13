@@ -97,19 +97,10 @@ const Skills = () => {
             'React': 'Building modern, interactive user interfaces with hooks and state management',
             'JavaScript': 'ES6+ features, async programming, and modern JavaScript development',
             'HTML/CSS': 'Semantic markup, CSS Grid, Flexbox, and responsive design principles',
-            'TypeScript': 'Type-safe JavaScript development with interfaces and advanced types',
-            'Vue.js': 'Progressive framework for building user interfaces and SPAs',
-            'Sass/SCSS': 'Advanced CSS preprocessing with variables, mixins, and functions',
             'Node.js': 'Server-side JavaScript development and API creation',
-            'Express.js': 'Building RESTful APIs and web applications with Node.js',
             'MongoDB': 'NoSQL database design, queries, and data modeling',
-            'PostgreSQL': 'Relational database design, SQL queries, and performance optimization',
             'Git': 'Version control, branching strategies, and collaborative development',
-            'Webpack': 'Module bundling, optimization, and build process configuration',
-            'Docker': 'Containerization, deployment, and development environment setup',
-            'Figma': 'UI/UX design, prototyping, and design system creation',
             'Responsive Design': 'Mobile-first approach and cross-device compatibility',
-            'REST APIs': 'API design, integration, and best practices'
         };
 
         return descriptions[skillName] || 'Proficient in modern development practices and methodologies';

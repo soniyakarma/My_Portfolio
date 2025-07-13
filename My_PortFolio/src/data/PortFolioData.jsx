@@ -65,7 +65,6 @@ export const portfolioData = {
     { name: "JavaScript", level: 90, category: "Frontend" },
     { name: "HTML/CSS", level: 95, category: "Frontend" },
     { name: "Node.js", level: 65, category: "Backend" },
-    { name: "Express.js", level: 60, category: "Backend" },
     { name: "MongoDB", level: 55, category: "Backend" },
     { name: "Git", level: 80, category: "Tools" },
     { name: "Responsive Design", level: 90, category: "Frontend" },
