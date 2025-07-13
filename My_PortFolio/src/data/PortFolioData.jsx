@@ -46,7 +46,7 @@ export const portfolioData = {
       title: "Portfolio Website",
       description: "Personal portfolio website built with React showcasing projects and skills.",
       technologies: ["React", "CSS3", "Responsive Design", "JavaScript"],
-      github: " ",
+      github: "https://github.com/soniyakarma/My_Portfolio ",
       image: "https://marketplace.canva.com/EAFOv0-FKOY/1/0/1131w/canva-black-and-white-monoline-typedriven-portfolio-cover-page--i5sVeUpuMk.jpg",
       featured: true
     },
