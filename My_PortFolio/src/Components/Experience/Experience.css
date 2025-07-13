@@ -1,0 +1,457 @@
+.experience {
+    background: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  
+  .experience-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .experience-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+  }
+  
+  .experience-intro p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    line-height: 1.6;
+  }
+  
+  .experience-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #e2e8f0;
+    background: white;
+    color: #4a5568;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .tab-btn:hover {
+    border-color: #4f46e5;
+    color: #4f46e5;
+    transform: translateY(-2px);
+  }
+  
+  .tab-btn.active {
+    background: #4f46e5;
+    border-color: #4f46e5;
+    color: white;
+  }
+  
+  .tab-count {
+    background: rgba(0, 0, 0, 0.1);
+    color: inherit;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .tab-btn.active .tab-count {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .tab-content {
+    margin-bottom: 3rem;
+  }
+  
+  /* Experience Timeline */
+  .experience-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #4f46e5, #7c3aed);
+  }
+  
+  .experience-card {
+    position: relative;
+    margin-bottom: 3rem;
+    animation: slideInLeft 0.6s ease-out both;
+  }
+  
+  .experience-timeline-dot {
+    position: absolute;
+    left: 1.25rem;
+    top: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #4f46e5;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 0 4px #e2e8f0;
+    z-index: 2;
+  }
+  
+  .experience-content {
+    margin-left: 5rem;
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-left: 4px solid #4f46e5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .experience-content:hover {
+    transform: translateX(10px);
+  }
+  
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .experience-content h3 {
+    color: #2d3748;
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  
+  .experience-duration {
+    background: #4f46e5;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  .experience-content h4 {
+    color: #4f46e5;
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .experience-description {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .experience-achievements h5 {
+    color: #2d3748;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .experience-achievements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .experience-achievements li {
+    position: relative;
+    padding: 0.25rem 0 0.25rem 1.5rem;
+    color: #4a5568;
+    line-height: 1.5;
+  }
+  
+  .experience-achievements li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #4f46e5;
+    font-weight: bold;
+  }
+  
+  /* Education Section */
+  .education-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .education-card {
+    animation: fadeInUp 0.6s ease-out both;
+  }
+  
+  .education-content {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-left: 4px solid #10b981;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .education-content:hover {
+    transform: translateY(-4px);
+  }
+  
+  .education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .education-content h3 {
+    color: #2d3748;
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  
+  .education-duration {
+    background: #10b981;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  .education-content h4 {
+    color: #10b981;
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .education-gpa {
+    color: #4a5568;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .relevant-courses h5 {
+    color: #2d3748;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .course-tag {
+    background: #10b981;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  /* Certifications Section */
+  .certifications-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .certification-card {
+    animation: fadeInUp 0.6s ease-out both;
+  }
+  
+  .certification-content {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-left: 4px solid #f59e0b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+  
+  .certification-content:hover {
+    transform: translateY(-4px);
+  }
+  
+  .certification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .certification-content h3 {
+    color: #2d3748;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .certification-date {
+    background: #f59e0b;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  .certification-content h4 {
+    color: #f59e0b;
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+  }
+  
+  .credential-id {
+    color: #4a5568;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  /* Experience Summary */
+  .experience-summary {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+  }
+  
+  .summary-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .summary-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .summary-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4f46e5;
+    margin-bottom: 0.5rem;
+  }
+  
+  .summary-label {
+    color: #4a5568;
+    font-weight: 500;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .experience-timeline::before {
+      left: 1rem;
+    }
+    
+    .experience-timeline-dot {
+      left: 0.25rem;
+    }
+    
+    .experience-content {
+      margin-left: 3rem;
+      padding: 1.5rem;
+    }
+    
+    .experience-header,
+    .education-header,
+    .certification-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .certifications-section {
+      grid-template-columns: 1fr;
+    }
+    
+    .summary-stats {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .summary-item {
+      padding: 1rem;
+    }
+    
+    .summary-number {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .experience-tabs {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .tab-btn {
+      width: 250px;
+      justify-content: center;
+    }
+    
+    .experience-content {
+      margin-left: 2rem;
+      padding: 1.25rem;
+    }
+    
+    .experience-content h3,
+    .education-content h3,
+    .certification-content h3 {
+      font-size: 1.1rem;
+    }
+  }
